@@ -1,0 +1,127 @@
+
+@import "../../styles/responsiveness.scss";
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #10153d;
+    color: white;
+    height: 150px;
+    width: 100%;
+
+
+    .left{     
+        flex: 1;
+
+        @include medium {
+            flex: 0.5;
+        }
+        .brand{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-left: 40px;
+
+            span{
+                font-weight: bold;
+                font-size: 32px;
+                
+                @include medium{
+                    display: none;
+                }
+          
+            }
+
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+
+    }
+
+    .right{
+       
+        flex: 1;
+        padding-right: 50px;
+
+        @include small{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        img{
+            height: 50px;
+            width: 50px;
+         
+            
+        }
+       
+ 
+        
+        .links{
+            display: flex;
+            justify-content: space-around;
+            @include small{
+                display: none;
+            }
+        }
+
+     
+       
+     
+        .menuIcon{
+            display: none;
+
+            @include small{
+                width: 100%;
+                display: flex;
+                justify-content: flex-end ;
+
+             
+                }
+              
+            }
+        }
+        .cancelIcon{
+            display: none;
+
+            }
+
+            & .activate{
+                z-index: 999;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                padding-left: 10px;
+            }
+
+
+            
+
+        }
+            
+     
+        
+
+        
+  .menu{
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 50%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+   
+    }
+
+  
+

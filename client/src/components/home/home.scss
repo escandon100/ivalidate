@@ -1,0 +1,85 @@
+@import "../../styles/responsiveness.scss";
+
+
+.home{
+    height: 100vh;
+    display: flex;
+    background-color: #10153d;
+    color: white;
+    width: 100%;
+
+ 
+
+    .left{
+        flex: 1;
+        padding-top: 20px;
+        padding-left: 50px;
+
+        .intro{
+            width: 100%;
+            line-height: 1.6;
+            .introDetails{
+                width: 70%;
+            }
+        }
+        .introButtons{
+            width: 70%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                padding: 30px 20px;
+                border-radius: 10px;
+                font-size: 16px;
+                background-color: #5746e0;
+                color: white;
+
+                img{
+                    width: 20px;
+                    
+                }
+            }
+        }
+        .introNumbers{
+            display: flex;
+            gap: 50px;
+            margin-top: 50px;
+
+            .validations{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 65px 65px;
+                gap: 20px;
+                border: 1px solid #232c69;
+
+            }
+            .purchases{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 60px 65px;
+                gap: 20px;
+                border: 1px solid #232c69;
+            }
+        }
+    }
+
+    .right{
+        flex: 1;
+        padding-top: 20px;
+
+        img{
+            height: 80%;
+            width: 100%;
+        }
+
+        
+    }
+
+}

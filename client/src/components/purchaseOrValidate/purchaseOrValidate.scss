@@ -1,0 +1,56 @@
+@import "../../styles/responsiveness.scss";
+.purchaseOrValidate{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+
+    .purchasewrapper{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .purchase{
+            width: 50%;
+            padding: 10px 15px;
+            background-color:#10153d ;
+            color: white;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .or{
+            position: absolute;
+            background-color: white;
+            left: 50%;
+            transform: translate(-50%);
+            color: grey;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 5px 2px black;
+            border-radius: 100%;
+            padding: 5px 10px;
+            z-index: 1;
+            height: 70%;
+    
+        }
+    
+        .validate{
+            width: 50%;
+            padding: 8px 25px;
+            color: black;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 5px 2px black;
+    
+        }
+
+    }
+
+
+    
+
+    
+    
+}
