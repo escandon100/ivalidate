@@ -1,80 +1,94 @@
 const card = [
     {
         id : 1,
-        name : "Amazon E-Cards",
-        img : "amazon.webp"
+        name : "Amazon",
+        img : "amazon.webp",
+        cvv : false
     },
     {   
         id : 2,
-        name  : "ebay E-Cards",
-        img : "ebay.png"
+        name  : "ebay",
+        img : "ebay.png",
+        cvv : false
     },
     {
         id : 3,
-        name : "Steam E-Cards",
-        img : "steam-card.webp"
+        name : "Steam",
+        img : "steam-card.webp",
+        cvv : false
 
     },
     {
         id : 4,
-        name : "Apple Itunes E-Cards",
-        img: "itunes.jpeg"
+        name : "Apple Itunes",
+        img: "itunes.jpeg",
+        cvv : false
     },
     {
         id : 5,
-        name : "Google Play E-Cards",
-        img : "google-play.png"
+        name : "Google Play",
+        img : "google-play.png",
+        cvv : false
 
     },
     {
         id : 6,
-        name : "Vanilla E-Cards",
-        img: "vanilla.webp"
+        name : "Vanilla ",
+        img: "vanilla.webp",
+        cvv : true
     },
-    {
+    {    
         id : 7,
-        name : "American Express E-Cards",
-        img : "american-express.jpg"
+        name : "American Express",
+        img : "american-express.jpg",
     },
     {
         id : 8,
-        name : "US PSN E-Cards",
-        img: "play-station-card.png"
+        name : "US PSN ",
+        img: "play-station-card.png",
+        cvv : false
     },
     {
         id : 9,
-        name : "Razer Gold E-Cards",
-        img: "Razer-gold.webp"
+        name : "Razer Gold",
+        img: "Razer-gold.webp",
+        cvv : false
     },
     {
         id : 10 ,
-        name : "Spotify E-cards",
-        img : "sportify.png"
+        name : "Spotify",
+        img : "sportify.png",
+        cvv : false
     },
     {
         id : 11 ,
-        name : "Nordstrom E-cards",
-        img : "nordstorm.jpg"
+        name : "Nordstrom",
+        img : "nordstorm.jpg",
+        cvv : false
     },
     {
         id : 12,
-        name : "Sephora E-cards",
-        img : "sephora.webp"
+        name : "Sephora",
+        img : "sephora.webp",
+        pin : true,
     },
     {
         id : 13,
-        name : "Hulu E-cards",
-        img : "hulu.webp"
+        name : "Hulu",
+        img : "hulu.webp",
+        cvv : false
     },
     {
         id : 14,
-        name : "Visa Gift E-cards",
-        img : "visa.jpg.jpeg"
+        name : "Visa Gift Card",
+        img : "visa.jpg.jpeg",
+        cvv : true
     },
     {
         id : 15,
-        name : "Us Paramount+ E-cards",
-        img : "paramount-card.jpeg"
+        name : "Paramount+",
+        img : "paramount-card.jpeg",
+        cvv : false
     },
 
 ]

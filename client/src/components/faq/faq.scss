@@ -1,9 +1,34 @@
 @import "../../styles/responsiveness.scss";
 
 .faq{
-    height: 100vh;
+    height: 100%;
     display: flex;
     width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+
+    @include small{
+        height: 100%;
+        flex-direction: column;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    @include medium{
+        height: 100%;
+        padding-top: 150px;
+        padding-bottom: 150px;
+        gap: 20px;
+    }
+    
+    @include large{
+        height: 100%;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+
+    
 
     .contact{
         flex: 1;
@@ -11,10 +36,32 @@
         justify-content: center;
         align-items: center;
 
+        @include medium{
+            flex: 0.5;
+        }
+
+
         .wrapper{
             display: flex;
             flex-direction: column;
             gap : 20px;
+
+            @include small{
+                padding-top: 20px;
+            }
+            @include medium{
+                text-align: center;
+                padding: 20px;
+            }
+     
+            h1{
+                @include small{
+                    font-size: 18px;
+                }
+                @include medium{
+                    font-size: 18px;
+                }
+            }
         }
 
         button{
@@ -25,6 +72,17 @@
             display: flex;
             gap: 10px;
             width: 50%;
+
+            @include small{
+                justify-content: center;
+                padding: 10px;
+                width: 100%;
+            }
+
+            @include medium{
+                width: 100%;
+                border: none;
+            }
 
             img{
                 height: 18px;
@@ -37,5 +95,12 @@
         flex: 1;
         display: flex;
         align-items: center;
+
+        @include small{
+            width: 100%;
+            padding: 20px;
+        }
+
+     
     }
 }

@@ -7,34 +7,62 @@
     background-color: #10153d;
     color: white;
     height: 150px;
-    width: 100%;
+    
+    .left{ 
 
-
-    .left{     
         flex: 1;
 
-        @include medium {
+        @include medium{
             flex: 0.5;
         }
+
+
         .brand{
             display: flex;
             align-items: center;
             gap: 40px;
             margin-left: 40px;
 
+            @include small{
+                gap: 10px;
+                margin-left: 20px
+            };
+
+            @include medium{
+                margin-left: 20px;
+            }
+
+            @include large{
+                margin-left: 30px;
+            }
+
+
             span{
                 font-weight: bold;
-                font-size: 32px;
+                font-size: 18px; 
+
+                @include small{
+                    font-size: 12px;
+                }
                 
                 @include medium{
                     display: none;
                 }
-          
+              
             }
 
             img{
                 height: 100px;
                 width: 100px;
+
+                @include small{
+                    height: 50px;
+                    width: 50px;
+                }
+                @include medium{
+                    height: 80px;
+                    width: 80px;
+                }
             }
         }
 
@@ -47,14 +75,20 @@
         padding-right: 50px;
 
         @include small{
-            display: flex;
-            justify-content: flex-end;
+            flex : none;
+            padding-right: 30px;
         }
+
+        @include medium{
+            padding-right: 10px;
+        }
+
+
+    
 
         img{
             height: 50px;
             width: 50px;
-         
             
         }
        
@@ -63,9 +97,16 @@
         .links{
             display: flex;
             justify-content: space-around;
+
             @include small{
                 display: none;
+                justify-content: flex-end;
             }
+
+            @include medium{
+                justify-content: space-around;
+            }
+       
         }
 
      
@@ -74,27 +115,35 @@
         .menuIcon{
             display: none;
 
-            @include small{
-                width: 100%;
-                display: flex;
-                justify-content: flex-end ;
+            img{
+                height: 30px;
+                width: 30px;
+            }
 
-             
-                }
-              
+            @include small{
+                display: block;
+                
+            }
+            
             }
         }
         .cancelIcon{
             display: none;
+            
+            img{
 
+                height: 30px;
+                width: 30px;
+                
             }
 
-            & .activate{
+            &.activate{
+                display: block;
                 z-index: 999;
-                width: 100%;
-                display: flex;
+                position: absolute;
                 justify-content: flex-end;
-                padding-left: 10px;
+                
+                
             }
 
 
@@ -116,12 +165,11 @@
         right: 0px;
         top: 0px;
         width: 50%;
-        height: 100vh;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
+        height: calc(100vh + 150px - 20px);
+        background-color: black;      
    
     }
 
   
 
+}

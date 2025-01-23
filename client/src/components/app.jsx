@@ -1,8 +1,7 @@
 import{ React}from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./layout/layout";
-
-
+import "./../styles/index.scss"
 const App = () => {
   
   const router = createBrowserRouter([{
@@ -13,8 +12,7 @@ const App = () => {
 
   return(
     <div>
-     <RouterProvider router = {router}/>
-   
+       <RouterProvider router = {router}/>
     </div>
   )
 }

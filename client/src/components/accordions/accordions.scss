@@ -2,7 +2,10 @@
 
 .accordions{
     padding-right: 20px;
-   
+    
+    @include small{
+        padding-right: 0px;
+    }
 
     .accordionSummary{
         height: 15vh;
@@ -16,12 +19,20 @@
         & .typographySummary{
             font-weight: 500;
             font-size: 18px;
+
+            @include small{
+                font-size: 16px;
+            }
         }
        
     }
 
     .typographyDetails{
         line-height: 1.8;
+
+        @include small{
+            font-size: 14px;
+        }
     }
     
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import "./home.scss"
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -14,8 +15,8 @@ const Home = () => {
        
         </div>
         <div className="introButtons">
-          <button><img src="/shopping-bag-icon2.png" alt="" />Buy Cards</button>
-          <button><img src="/right-arrow2.png" alt="" />Validate Cards</button>
+          <button><img src="/shopping-bag-icon2.png" alt="" /><Link to = "#buy">Buy Cards</Link></button>
+          <button><img src="/right-arrow2.png" alt="" /><Link to = "#buy">Validate Cards</Link></button>
         </div>
         <div className="introNumbers">
           <div className="validations">

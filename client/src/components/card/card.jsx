@@ -9,7 +9,7 @@ const Card = ({card}) => {
     <div className='card'>
         <h3>{card.name}</h3> 
         <img src={card.img} alt="" />
-        <PurchaseOrValidate/>
+        <PurchaseOrValidate card = {card}/>
     </div>
   )
 }

@@ -31,12 +31,11 @@ const Testimonials = () => {
             <div className="reviews">
                 <div className="review">
                     <div className="reviewText">
-                        <p><div> <img src="/quote-left.png" alt="" /></div>  
-                           Quick and easy , best for gift cards to your friends.
+                        <p> Quick and easy , best for gift cards to your friends.
                             No hassle or worries, card is delivered to your email and 
                             you forward it to your friends.A great platform to gift someone
                             close to you.
-                           <div> <img src="/quote-right.png" alt="" /></div> </p>
+                          </p>
                        
                     </div>
                     <div className="user">
@@ -54,10 +53,10 @@ const Testimonials = () => {
                 </div>
                 <div className="review">
                     <div className="reviewText">
-                        <p><div> <img src="/quote-left.png" alt="" /></div>I stumbled on your site looking for fast delivery of gift cards.
+                        <p>I stumbled on your site looking for fast delivery of gift cards.
                              The site was quick and easy to use, and I would recommend it. 
                              This is a great option for buying digital giftcards
-                             if you are not living in USA.<div> <img src="/quote-right.png" alt="" /></div> </p>
+                             if you are not living in USA.</p>
                     </div>
                     <div className="user">
                         <div className="userImg"> 
@@ -67,16 +66,15 @@ const Testimonials = () => {
                             <h3>Vincent Mark</h3>
                             <span>Client</span>
                         </div>
-                        
 
                     </div>
 
                 </div>
                 <div className="review">
                     <div className="reviewText">
-                        <p><div> <img src="/quote-left.png" alt="" /></div>  I hardly have problems when I purchase gift cards,
+                        <p>I hardly have problems when I purchase gift cards,
                          if I do have issues they resolve them very quickly! Good professional friendly service,
-                         especially the fact that it is easy and fast.<div> <img src="/quote-right.png" alt="" /></div>  </p>
+                         especially the fact that it is easy and fast. </p>
                     </div>
                     <div className="user">
                         <div className="userImg"> 
@@ -86,8 +84,6 @@ const Testimonials = () => {
                             <h3>Amanda Smith</h3>
                             <span>Client</span>
                         </div>
-                        
-
                     </div>
 
                 </div>

@@ -2,8 +2,31 @@
 
 .about{
     display: flex;
-    height: 100vh;
-    
+    height: 100%;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+
+    @include small{
+        flex-direction: column-reverse;
+        height: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    @include medium{
+        display: flex;
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 130px;
+   
+    }
+
+    @include large{
+        display: flex;
+        height: 100%;
+    }
 
     .left{
         flex: 1;
@@ -11,14 +34,50 @@
         justify-content: flex-end;
         align-items: center;
 
+        @include small{
+            flex: none;
+            flex-direction: column; 
+            justify-content: center;
+        } 
+
         .wrapper{
-            width: 70%;
+            width: 90%;
+
+            @include small{
+                width: 90%;
+            }
+
+            @include medium{
+                width: 95%;
+            }
+
+            @include large{
+                width: 90%;
+            }
+
+         
+            
 
             .leftText{
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
                 line-height: 1.6;
+                font-size: 18px;
+
+                @include small{
+                    align-items: center;
+                    text-align: center;
+                    font-size: 14px;
+                }
+
+                @include medium{
+                    font-size: 16px;
+                }
+
+                @include large{
+                    font-size: 18px;
+                }
     
                 button{
                     width: 40%;
@@ -27,8 +86,24 @@
                     gap: 10px;
                     font-size: 16px;
                     color: white;
+                    border: none;
                     background-color:#232c69 ;
-                    padding: 30px 20px;
+                    padding: 20px;
+
+                    @include small{
+                        width: 70%;
+                        justify-content: center;
+                        font-size: 14px;
+                        padding: 15px;
+                    }
+
+                    @include medium{
+                        width: 70%;
+                    }
+
+                    @include large{
+                        width: 50%;
+                    }
     
     
                     img{
@@ -45,17 +120,49 @@
 
     .right{
         flex: 1;
+        padding: 30px;
+
+        @include small{
+            flex: 1;
+        }
+
+        @include medium{
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        @include large{
+            padding: 30px;
+        }
+    
 
         .rightImage{
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            
+
+            @include small{
+                height: 400px;
+
+            }
+            @include medium{
+                width: 90%;
+            }
+
+         
 
             img{
-                height: 60%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+
+                @include small{
+                    height: 80%;
+                    width: 80%;
+                    object-fit: cover;
+                }
+
             }
         }
 

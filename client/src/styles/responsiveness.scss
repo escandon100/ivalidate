@@ -9,7 +9,7 @@
     }
 };
 @mixin large(){
-    @media (max-width : 1209px) and (min-width : 944px) {
+    @media (max-width : 1440px) and (min-width : 944px) {
         @content
     }
 };

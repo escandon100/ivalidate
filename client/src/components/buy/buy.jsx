@@ -4,6 +4,8 @@ import cards from "../../lib/cards"
 import "./buy.scss"
 
 const Buy = () => {
+
+   
   return (
     <div className='buy'>
       <div className="heading">
@@ -15,6 +17,7 @@ const Buy = () => {
         return  <Card key = {card.id} card = {card} />
         })}
       </div> 
+ 
     </div>
   )
 }
